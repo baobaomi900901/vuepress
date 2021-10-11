@@ -28,7 +28,11 @@ module.exports = {
     // 侧边栏
     sidebar: {
       "/work/": ["Vodafone", "UILego"],
-      "/study-notes/code/": ["code-1", "code-2"],
+      // "/study-notes/code/": [{title: "bbc", path: './bbc', children: ['./bbc/index.html']},"code-2"],
+      "/study-notes/code/": [
+        'macos-ssh-github',
+        "code-2",
+      ],
       "/study-notes/design/": ["ue-1", "ue-2"],
     },
   },
