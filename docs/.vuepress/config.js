@@ -1,8 +1,8 @@
 module.exports = {
-  base:"/docs/",
+  base:"/",
   title:"MobyTan",
   themeConfig: {
-    logo: "../assets/img/logo.png",
+    logo: "/assets/img/logo.png",
     // 禁止导航栏
     // navbar:false,
     // 导航栏内容

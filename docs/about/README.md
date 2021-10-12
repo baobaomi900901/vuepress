@@ -1,7 +1,7 @@
 ---
 title: '关于我1'
 # 禁止导航栏
-navbar: false
+# navbar: false
 # 自动生成侧边栏
 # sidebar: auto
 ---
