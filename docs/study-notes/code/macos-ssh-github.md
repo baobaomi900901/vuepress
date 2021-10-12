@@ -90,4 +90,4 @@ Connection to github.com closed.
 ```
 
 
---- end ---
+<div style="text-align: center">--- END ---</div>
