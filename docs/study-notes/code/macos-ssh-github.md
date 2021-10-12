@@ -1,6 +1,6 @@
 ---
 title: macOS 生成 SSH key 在 GitHub 中使用
-sidebarDepth: 0
+# sidebarDepth: 0
 ---
 ## macOS 生成 SSH key 在 GitHub 中使用
 
