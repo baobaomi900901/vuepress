@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>macOS 生成 SSH key 在 GitHub 中使用 | MobyTan</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.a72a1730.css" as="style"><link rel="preload" href="/docs/assets/js/app.41e446bb.js" as="script"><link rel="preload" href="/docs/assets/js/2.a4592208.js" as="script"><link rel="preload" href="/docs/assets/js/12.0d69b21c.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.7dd7837f.js"><link rel="prefetch" href="/docs/assets/js/11.624ec96f.js"><link rel="prefetch" href="/docs/assets/js/13.39aa596b.js"><link rel="prefetch" href="/docs/assets/js/14.ed38601c.js"><link rel="prefetch" href="/docs/assets/js/15.1cd8d8a9.js"><link rel="prefetch" href="/docs/assets/js/16.2ad21cd3.js"><link rel="prefetch" href="/docs/assets/js/17.045331d8.js"><link rel="prefetch" href="/docs/assets/js/3.bade8192.js"><link rel="prefetch" href="/docs/assets/js/4.e314dd38.js"><link rel="prefetch" href="/docs/assets/js/5.6c53e593.js"><link rel="prefetch" href="/docs/assets/js/6.196a0a07.js"><link rel="prefetch" href="/docs/assets/js/7.52f2b961.js"><link rel="prefetch" href="/docs/assets/js/8.051b2462.js"><link rel="prefetch" href="/docs/assets/js/9.bfca90f4.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.a72a1730.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="../assets/img/logo.png" alt="MobyTan" class="logo"> <span class="site-name can-hide">MobyTan</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Work Menu" class="dropdown-title"><span class="title">Work</span> <span class="arrow down"></span></button> <button type="button" aria-label="Work Menu" class="mobile-dropdown-title"><span class="title">Work</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/work/Vodafone/" class="nav-link">
+  Vodafone
+</a></li><li class="dropdown-item"><!----> <a href="/docs/work/UILego/" class="nav-link">
+  UILego
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">Study</span> <span class="arrow down"></span></button> <button type="button" aria-label="Study Menu" class="mobile-dropdown-title"><span class="title">Study</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/study-notes/code/" class="nav-link router-link-active">
+  Code
+</a></li><li class="dropdown-item"><!----> <a href="/docs/study-notes/design/" class="nav-link">
+  UEdesign
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Work Menu" class="dropdown-title"><span class="title">Work</span> <span class="arrow down"></span></button> <button type="button" aria-label="Work Menu" class="mobile-dropdown-title"><span class="title">Work</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/work/Vodafone/" class="nav-link">
+  Vodafone
+</a></li><li class="dropdown-item"><!----> <a href="/docs/work/UILego/" class="nav-link">
+  UILego
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">Study</span> <span class="arrow down"></span></button> <button type="button" aria-label="Study Menu" class="mobile-dropdown-title"><span class="title">Study</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/study-notes/code/" class="nav-link router-link-active">
+  Code
+</a></li><li class="dropdown-item"><!----> <a href="/docs/study-notes/design/" class="nav-link">
+  UEdesign
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/study-notes/code/macos-ssh-github.html" aria-current="page" class="active sidebar-link">macOS 生成 SSH key 在 GitHub 中使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/study-notes/code/macos-ssh-github.html#macos-生成-ssh-key-在-github-中使用" class="sidebar-link">macOS 生成 SSH key 在 GitHub 中使用</a></li></ul></li><li><a href="/docs/study-notes/code/code-2.html" class="sidebar-link">code-2</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="macos-生成-ssh-key-在-github-中使用"><a href="#macos-生成-ssh-key-在-github-中使用" class="header-anchor">#</a> macOS 生成 SSH key 在 GitHub 中使用</h2> <h3 id="_1-检查-ssh-key-是否存在"><a href="#_1-检查-ssh-key-是否存在" class="header-anchor">#</a> 1.检查 SSH key 是否存在</h3> <p>终端输入:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>ls -al ~/.ssh
+</code></pre></div><p>如果没有, 会显示:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>No such file or directory
+</code></pre></div><p>如果有, 会显示:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>total 40
+drwx------   7 [Username]  staff   224 10 11 09:08 .
+drwxr-xr-x+ 89 [Username]  staff  2848 10 11 09:37 ..
+-rw-------@  1 [Username]  staff  1876  3 23  2020 github_rsa
+-rw-r--r--@  1 [Username]  staff   407  3 23  2020 github_rsa.pub
+-rw-------   1 [Username]  staff  2655 10 11 09:00 id_rsa
+-rw-r--r--@  1 [Username]  staff   579 10 11 09:00 id_rsa.pub
+-rw-r--r--   1 [Username]  staff  1989 10 11 00:14 known_hosts
+</code></pre></div><p>ps: <code>[Username]</code> 是电脑的用户名, 如果有 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 可以跳转到第四步.
+<br></p> <h3 id="_2-生成新的-ssh-key"><a href="#_2-生成新的-ssh-key" class="header-anchor">#</a> 2.生成新的 SSH key</h3> <p>终端输入:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+</code></pre></div><p>ps: <code>your_email@example.com</code> 替换成 githu 注册时的邮箱.</p> <p>成功后显示:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>&gt; Generating public/private rsa key pair.
+&gt; Enter file in which to save the key (/Users/[Username]/.ssh/id_rsa):
+</code></pre></div><p>接下来会提示保存 <code>.ssh/id_rsa</code> 的路径，这里直接 enter.</p> <div class="language-cmd extra-class"><pre class="language-text"><code>&gt; Created directory '/Users/[Username]/.ssh'.
+&gt; Enter passphrase (empty for no passphrase):
+</code></pre></div><p>提示输入 <code>passphrasem</code> , 编辑一个密码输入一次, 校验一次, 下一步会用到.</p> <p>成功后显示:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>&gt; Your identification has been saved in /Users/xxx/.ssh/id_rsa.
+&gt; Your public key has been saved in /Users/xxx/.ssh/id_rsa.pub.
+&gt; The key fingerprint is:
+&gt; 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48 your_email@example.com
+&gt; The key's randomart image is:
+//(后面图形省略）
+</code></pre></div><br> <h3 id="_3-添加-key-到-ssh"><a href="#_3-添加-key-到-ssh" class="header-anchor">#</a> 3.添加 key 到 SSH</h3> <p>终端输入:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>ssh-add ~/.ssh/id_rsa
+</code></pre></div><p>ps: 这时会要求输入 <code>passphrase</code>, 输入第二步中填写的 <code>passphrase</code>.</p> <h3 id="_4-在-github-中添加-ssh-key"><a href="#_4-在-github-中添加-ssh-key" class="header-anchor">#</a> 4.在 github 中添加 SSH key</h3> <p>打开 <code>Finder</code> , <code>Command</code>+<code>Shift</code>+<code>G</code>, 输入路径:</p> <blockquote><p>/Users/[Username]/.ssh/</p></blockquote> <p>找到 <code>id_rsa.pub</code> 文件, 右键选择打开方式 <code>文本编辑.app</code>, 复制所有内容.
+<br></p> <p>接着登录 github , 打开 Settings--&gt;SSH keys--&gt;Add SSH key:</p> <p>github 可以拥有多个 SSH key, <code>title</code> 是给这个 key 命名.</p> <p>把 <code>id_rsa.pub</code> 中的内容粘贴到 key 中.</p> <h3 id="_5-测试-ssh-key-是否正常"><a href="#_5-测试-ssh-key-是否正常" class="header-anchor">#</a> 5.测试 SSH key 是否正常</h3> <p>终端输入:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>ssh git@github.com
+</code></pre></div><p>成功后显示:</p> <div class="language-cmd extra-class"><pre class="language-text"><code>Hi your_name! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+</code></pre></div><div style="text-align:center;">--- END ---</div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">10/12/2021, 11:06:59 AM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/study-notes/code/code-2.html">
+        code-2
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.41e446bb.js" defer></script><script src="/docs/assets/js/2.a4592208.js" defer></script><script src="/docs/assets/js/12.0d69b21c.js" defer></script>
+  </body>
+</html>
