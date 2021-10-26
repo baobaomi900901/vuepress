@@ -1,41 +1,33 @@
+const pluginsConf = require('./config/pluginsConf')
+// const sidebarConf = require('./config/sidebarConf')
+
 module.exports = {
-  base:"/",
-  title:"MobyTan",
+  base: "/",
+  title: "MobyTang",
+  plugins: pluginsConf,
   themeConfig: {
+    type:"blog",
     logo: "/assets/img/logo.png",
     // 禁止导航栏
     // navbar:false,
     // 导航栏内容
-    lastUpdated: "更新时间", // string | boolean
-    nav: [
-      {
-        text: "Work",
-        ariaLabel: "Work Menu",
-        link: "/work/Vodafone",
-        items: [
-          { text: "Vodafone", link: "/work/Vodafone/" },
-          { text: "UILego", link: "/work/UILego/" },
-        ],
-      },
-      {
-        text: "Study",
-        ariaLabel: "Study Menu",
-        items: [
-          { text: "Code", link: "/study-notes/code/" },
-          { text: "UEdesign", link: "/study-notes/design/" },
-        ],
-      },
-      { text: "About", link: "/about/" },
-    ],
+    lastUpdated: "最近更新时间", // string | boolean
+    author: "Moby",
+    search: true,
+    searchMaxSuggestions: 10,
+    nav: require("./nav.js"),
     // 侧边栏
-    sidebar: {
-      "/work/": ["Vodafone", "UILego"],
-      // "/study-notes/code/": [{title: "bbc", path: './bbc', children: ['./bbc/index.html']},"code-2"],
-      "/study-notes/code/": [
-        'macos-ssh-github',
-        "code-2",
-      ],
-      "/study-notes/design/": ["ue-1", "ue-2"],
-    },
+    sidebar: require("./sidebar.js"),
+    // sidebar: sidebarConf,
+    sidebarDept: 2,
+    // ICP 备案
+    // record: '',
+    // recordlink: '',
+    // 公网安备备案
+    // cyberSecurityRecord:'',
+    // cyberSecurityLink:'',
+    // 友情链接
+    // friendLink:[{title:'',desc:'',email:'',link:''}]
+
   },
 };

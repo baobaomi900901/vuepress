@@ -1,8 +1,8 @@
 ---
-title: macOS 生成 SSH key 在 GitHub 中使用
-# sidebarDepth: 0
+title: macOS 生成 SSH key 在 GitHub 中使用1
+sidebarDepth: 2
 ---
-## macOS 生成 SSH key 在 GitHub 中使用
+# macOS 生成 SSH key 在 GitHub 中使用
 
 ### 1.检查 SSH key 是否存在
 终端输入: 

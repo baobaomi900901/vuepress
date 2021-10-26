@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /hero.png
+heroImage: /assets/img/logo.png
 heroText: Hero 标题 abc
 tagline: Hero 副标题
 actionText: 快速上手 →
