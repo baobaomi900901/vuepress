@@ -1,1 +1,0 @@
-module.exports = ["ue-1", "ue-2"]
