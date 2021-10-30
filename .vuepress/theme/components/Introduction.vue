@@ -10,7 +10,7 @@
   修改时间：
 -->
 <template>
-  <div class="bg-gray-200 px-40 h-full flex items-center flex-col">
+  <div class="bg-gray-200 px-40 flex items-center flex-col">
     <div class="el-Indt-content w-full flex flex-col mt-32">
       <div class="text-6xl font-semibold mb-10">Maosusu.😾</div>
       <div>
@@ -39,7 +39,7 @@
             mb-4
           "
         >
-          <span class="text-4xl font-bold text-blue-600">Industry</span>
+          <span class="text-4xl font-bold text-blue-600">AnyIndustry</span>
           <span class="text-gray-400">toB</span>
         </div>
         <div
@@ -52,7 +52,7 @@
             mb-4
           "
         >
-          <span class="text-4xl font-bold text-blue-600">Workplace</span>
+          <span class="text-4xl font-bold text-blue-600">Anywhere</span>
           <span class="text-gray-400">ShenZhen&ChangSha</span>
         </div>
         <div
@@ -65,10 +65,10 @@
             mb-4
           "
         >
-          <span class="text-4xl font-bold text-blue-600">Industry</span>
-          <span class="text-gray-400">toB</span>
+          <span class="text-4xl font-bold text-blue-600">Anytime</span>
+          <span class="text-gray-400">996</span>
         </div>
-        <ul class=" text-sm mt-32 font-semibold">
+        <ul class="text-sm mt-32 font-semibold">
           <li>3D</li>
           <li>UI/UX Design</li>
           <li>Motion Design</li>
@@ -76,14 +76,10 @@
           <li>Brand Design</li>
           <li>Web deveiopment</li>
         </ul>
-        <div class=" w-full text-center mt-32">Good things comest to down-scrollers</div>
-        <div>123</div> <br>
-        <div>123</div> <br>
-        <div>123</div> <br>
-        <div>123</div> <br>
-        <div>123</div> <br>
-        <div>123</div> <br>
-        <div>123</div> <br>
+        <div class="w-full text-center mt-12">
+          Good things comest to down-scrollers
+        </div>
+        <div class=" w-full h-60 bg-red-400">123</div>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="HomePage bg-gray-800 w-full flex">
+  <div class="HomePage bg-gray-800 w-full flex h-screen">
     <div class="HomePage_left h-screen w-5/12 bg-gray-400">
       <div
         class="
@@ -24,11 +24,11 @@
       <div class=""><img src="" alt="" /></div>
     </div>
     <div class="HomePage_content w-full bg-red-300">
-      <div class="HomePage_content_head  h-screen bg-gray-500">
+      <div class="HomePage_content_head h-screen bg-blue-500">
         <div class="Introduce h-5/6">
           <div class="myself">
             <div class="vc font-black">Welcome</div>
-            <div class="myname font-bold ">i'm<br />maosusu<br />designer</div>
+            <div class="myname font-bold">i'm<br />maosusu<br />designer</div>
           </div>
         </div>
         <div class="flex h-1/6">
@@ -46,19 +46,21 @@
           </div>
         </div>
       </div>
+
       <Introduction />
+
     </div>
   </div>
 </template>
 
 <script>
-import Introduction from './Introduction.vue'
+import Introduction from "./Introduction.vue";
 
 export default {
   name: "Home",
-  components:{
-    Introduction
-  }
+  components: {
+    Introduction,
+  },
 };
 </script>
 
@@ -73,10 +75,11 @@ export default {
   content: "💡.";
 }
 .HomePage_content {
+  height: 100%;
   overflow: auto;
 }
 .HomePage_content_head {
-  height: 100%;
+  /* height: 100vh; */
   /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 16.6666%; */
