@@ -1,6 +1,15 @@
 module.exports = {
-  base:"./theme/layouts",
+  base:"/",
+  // base:"./theme/layouts",
   title:"MobyTan",
+  css: {
+    loaderOptions: {
+      // global scss variables 传递配置选项到 sass-loader
+      css: {
+        prependData: `@import "./style/index.css";`,
+      },
+    },
+  },
   themeConfig: {
     logo: "/assets/img/logo.png",
     // 禁止导航栏
@@ -38,4 +47,10 @@ module.exports = {
       "/study-notes/design/": ["ue-1", "ue-2"],
     },
   },
+  // postcss: {
+  //   plugins: [
+  //     require('tailwindcss'),
+  //     require('autoprefixer')
+  //   ]
+  // }
 };

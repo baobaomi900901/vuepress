@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/baobaomi900901/docs#readme",
   "devDependencies": {
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
     "vuepress": "^1.8.2"
   }
 }
